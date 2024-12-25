@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuego - Creatividad al Máximo</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff4b4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #121212;
+        }
+
+        nav .navbar-brand img {
+            width: 100px;
+            height: auto;
+        }
+
+        nav .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            padding: 0.75rem 1.25rem;
+            color: white;
+        }
+
+        nav .navbar-nav .nav-link:hover {
+            color: #66B0FF;
+        }
+
+        header {
+            background: linear-gradient(90deg, #F4A300, #FF6F61);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+        }
+
+        .content-section {
+            margin: 3rem auto;
+            text-align: center;
+        }
+
+        .content-section img {
+            max-width: 100%;
+            border-radius: 0.5rem;
+        }
+
+        .timeline {
+            position: relative;
+            margin: 3rem auto;
+            padding: 2rem 0;
+            max-width: 800px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            width: 4px;
+            background-color: #ffcb20;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-end;
+        }
+
+        .timeline-content {
+            position: relative;
+            width: 50%;
+            padding: 1rem;
+            background: #ffcf90;
+            border: 1px solid #ffcf90;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before,
+        .timeline-item:nth-child(even) .timeline-content::before {
+            content: '';
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: #F4A300;
+            border: 4px solid #ffcf90;;
+            border-radius: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            left: -8%;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content::before {
+            right: -8%;
+        }
+
+        footer {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer a {
+            color: #66B0FF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .game-info-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #ffffff;
+        color: #282c34;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .game-info-text {
+        max-width: 60%;
+        padding-right: 20px;
+    }
+
+    .game-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #000000;
+    }
+
+    .game-info-text p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin-bottom: 10px;
+    }
+
+    .game-info-image img {
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .challenge-section {
+        margin-top: 30px;
+        background: #ffffff;
+        color: #333;
+        padding: 20px;
+        border-radius: 8px;
+    }
+
+    .challenge-section h3 {
+        font-size: 1.8rem;
+        color: #000000;
+    }
+
+    .challenge-section p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.postimg.cc/4dg4DbY8/Crea-Te-1-removebg-preview.png" alt="Creatividad">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="https://i.postimg.cc/4dg4DbY8/Crea-Te-1-removebg-preview.png" alt="Menú" style="width: 30px; height: 30px;">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="videojuego.html">Videojuego</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyecto.html">Proyecto Final</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Videojuego</h1>
+        <p>Un viaje único en tecnología y creatividad.</p>
+    </header>
+
+    <main class="container content-section">
+        <h2>Descubre Nuestro Videojuego</h2>
+        <p class="mt-4">Sumérgete en una experiencia interactiva como nunca antes. Diseñado para estimular tu imaginación, este videojuego combina la creatividad con tecnología de vanguardia.</p>
+        <img src="https://i.ibb.co/xC7VRWK/Captura-de-pantalla-7.png" alt="Imagen del Videojuego" class="my-4">
+        <p>Explora mundos fascinantes, resuelve desafíos únicos y lleva tu creatividad al límite con esta aventura interactiva.</p>
+        
+            <!-- Sección de Jugabilidad con estilo llamativo -->
+    <h2 class="mt-5 text-center" style="font-size: 2.5rem; color: #000000;">Jugabilidad</h2>
+    
+    <div class="game-info-container">
+        <div class="game-info-text">
+            <h3 class="game-title">La Aventura Inicia...</h3>
+            <p>El jugador despierta en una sala de la nave, en su camino se encuentra con distintos alienígenas a los cuales tiene que matarlos y sobrevivir para llegar al centro de control de la nave y escapar.</p>
+            <p><strong>Vive la tensión y la adrenalina en un entorno 360° totalmente inmersivo.</strong></p>
+            <p>Usa tu ingenio y habilidades para enfrentarte a hordas de alienígenas con recursos limitados.</p>
+            <p>Explora y desbloquea áreas de la nave mientras luchas por sobrevivir.</p>
+        </div>
+        <div class="game-info-image">
+            <!-- Imagen representativa del juego -->
+            <img src="https://via.placeholder.com/500x300?text=Enfrenta+Alienígenas" alt="Juego de Alienígenas" class="img-fluid rounded">
+        </div>
+    </div>
+    
+        <h2 class="mt-5">Evolución del Videojuego</h2>
+        <div class="timeline">
+            <!-- Etapa 1 -->
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h4>Etapa 1</h4>
+                    <p>Conceptualización e ideas iniciales.</p>
+                    <div id="carouselStage1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.postimg.cc/cJXgBb9R/etapa1.png" class="d-block w-100" alt="Etapa 1 - Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/QtzFRWrV/etapa11.png" class="d-block w-100" alt="Etapa 1 - Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/PxJL3Q9B/etapa111.png" class="d-block w-100" alt="Etapa 1 - Imagen 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStage1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselStage1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Etapa 2 -->
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h4>Etapa 2</h4>
+                    <p>Prototipado inicial y diseño básico.</p>
+                    <div id="carouselStage2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.postimg.cc/xdTyQHBP/etapa2.png" class="d-block w-100" alt="Etapa 2 - Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/tgSd4JjG/etapa22.png" class="d-block w-100" alt="Etapa 2 - Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/vB4rgyYg/etapa222.png" class="d-block w-100" alt="Etapa 2 - Imagen 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/pT3DKSr0/etapa2222.png" class="d-block w-100" alt="Etapa 2 - Imagen 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStage2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselStage2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Etapa 3 -->
+            <div class="timeline-item" data-aos="fade-right">
+                <div class="timeline-content">
+                    <h4>Etapa 3</h4>
+                    <p>Desarrollo del videojuego y pruebas.</p>
+                    <div id="carouselStage3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.postimg.cc/CMD8Wmzg/etapa3.png" class="d-block w-100" alt="Etapa 3 - Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/vHsnMfV6/etapa33.png" class="d-block w-100" alt="Etapa 3 - Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/j2zJPdG5/etapa333.png" class="d-block w-100" alt="Etapa 3 - Imagen 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStage3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselStage3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Etapa 4 -->
+            <div class="timeline-item" data-aos="fade-left">
+                <div class="timeline-content">
+                    <h4>Etapa 4</h4>
+                    <p>Lanzamiento y mejoras continuas.</p>
+                    <div id="carouselStage4" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.postimg.cc/1XPzx0jm/etapa4.png" class="d-block w-100" alt="Etapa 4 - Imagen 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/tTFgmvDv/etapa44.png" class="d-block w-100" alt="Etapa 4 - Imagen 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/tTFgmvDv/etapa444.png" class="d-block w-100" alt="Etapa 4 - Imagen 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.postimg.cc/tTFgmvDv/etapa4444.png" class="d-block w-100" alt="Etapa 4 - Imagen 3">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselStage4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselStage4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="btn btn-warning mt-3">Juega Ahora</a>
+    </main>
+    
+
+    <footer>
+        <p>&copy; 2024 - Interacción Humano Computador | Ciencias de la Computación</p>
+        <div class="footer-links">
+            <a href="index.html">Inicio</a> |
+            <a href="videojuego.html">Videojuego</a> |
+            <a href="proyecto.html">Proyecto Final</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

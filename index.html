@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatividad al Máximo</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fff4b4;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #121212;
+        }
+
+        nav .navbar-brand {
+            font-size: 1.75rem;
+            color: #F4A300;
+        }
+
+        nav .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            padding: 0.75rem 1.25rem;
+            color: white;
+        }
+
+        nav .navbar-nav .nav-link:hover {
+            color: #66B0FF;
+        }
+
+        header {
+            background: linear-gradient(90deg, #F4A300, #FF6F61);
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+        }
+
+        .hero {
+            background-image: url('https://i.postimg.cc/NFHmfxgW/tumblr-o53kmc-GSVP1uo4yrqo3-400-gif-400-400.gif');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+            border-radius: 0.5rem;
+        }
+
+        footer {
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: #66B0FF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            margin-top: 1rem;
+        }
+
+        .footer-contact {
+            margin-top: 1.5rem;
+        }
+
+        .footer-contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-contact li {
+            margin-bottom: 5px;
+        }
+
+        .footer-contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-contact a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+        }
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.postimg.cc/4dg4DbY8/Crea-Te-1-removebg-preview.png" alt="Creatividad" style="width: 100px; height: auto;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="https://i.postimg.cc/4dg4DbY8/Crea-Te-1-removebg-preview.png" alt="Menú" style="width: 30px; height: 30px;">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="videojuego.html">Videojuego</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="proyecto.html">Proyecto Final</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1 class="animate__animated animate__pulse">CreaTe</h1>
+        <p class="animate__animated animate__pulse">Explora ideas, proyectos y lo mejor de la creatividad en tecnología</p>
+    </header>
+
+    <div class="hero">
+        <h2>La creatividad no tiene límites</h2>
+    </div>
+
+    <main class="container my-5">
+        <div class="container-fluid py-5" style="background-color: #ffcf90;">
+            <h2 class="text-center mt-5">Nuestro Equipo</h2>
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow" style="background-color: #ffffff;">
+                        <div class="card-body">
+                            <img src="https://i.postimg.cc/hjDvJ1KX/image-1.png" 
+                                 class="rounded-circle mx-auto d-block mb-3 border border-warning" 
+                                 alt="Yanira Angie Suni Quispe" 
+                                 style="width: 150px; height: 150px;">
+                            <h5 class="card-title">Yanira Angie Suni Quispe</h5>
+                            <p class="card-text text-muted">Desarrolladora especializada en diseño de interfaces e interacción humano-computador.</p>
+                            <a href="mailto:ysuniq@unsa.edu.pe" class="btn btn-outline-warning btn-sm">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow" style="background-color: #ffffff;">
+                        <div class="card-body">
+                            <img src="https://i.postimg.cc/HLCVmCK4/image.png" 
+                                 class="rounded-circle mx-auto d-block mb-3 border border-warning" 
+                                 alt="Sennayda Rimache Choquehuanca" 
+                                 style="width: 150px; height: 150px;">
+                            <h5 class="card-title">Sennayda Rimache Choquehuanca</h5>
+                            <p class="card-text text-muted">Desarrolladora enfocada en soluciones creativas y técnicas innovadoras.</p>
+                            <a href="mailto:desarrollador2@example.com" class="btn btn-outline-warning btn-sm">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> Contactar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <h2 style="margin-top: 1cm;">Descubre Nuestros Proyectos</h2>
+        <div class="row">
+            <!-- Tarjetas de "Videojuego" y "Proyecto Final" -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://i.ibb.co/xC7VRWK/Captura-de-pantalla-7.png" class="card-img-top img-fluid" alt="Videojuego">
+                    <div class="card-body">
+                        <h5 class="card-title">Videojuego</h5>
+                        <p class="card-text">Sumérgete en un juego único, creado para estimular tu imaginación.</p>
+                        <a href="videojuego.html" class="btn btn-warning">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="https://i.ibb.co/pJCMPr1/Whats-App-Image-2024-12-25-at-11-07-17-AM.jpg" class="card-img-top img-fluid" alt="Proyecto Final">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyecto Final</h5>
+                        <p class="card-text">Un concepto revolucionario en interacción humano-computador.</p>
+                        <a href="proyecto.html" class="btn btn-warning">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 - Interacción Humano Computador | Ciencias de la Computación</p>
+            <div class="footer-links">
+                <a href="videojuego.html">Videojuego</a> |
+                <a href="proyecto.html">Proyecto Final</a> |
+                <a href="#">Inicio</a>
+            </div>
+            <div class="footer-contact">
+                <p>Contacto:</p>
+                <ul>
+                    <li>
+                        <a href="mailto:ysuniq@unsa.edu.pe">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Desarrollador: Yanira Angie Suni Quispe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:desarrollador2@example.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Desarrollador: Sennayda Rimache Choquehuanca
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
