@@ -25,6 +25,19 @@
             padding: 0;
         }
 
+        .hero {
+            background-image: url('https://i.postimg.cc/XYSyK9vN/GAME-UPDATE-Roblox-Studio-2024-12-26-09-39-50-2.gif');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+
         nav {
             background-color: #121212;
         }
@@ -52,9 +65,11 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
+        
+
         header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
         }
 
         header p {
@@ -202,7 +217,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="https://i.postimg.cc/4dg4DbY8/Crea-Te-1-removebg-preview.png" alt="Creatividad">
+                <img src="https://i.postimg.cc/637Jz2Hz/Crea-Te-removebg-preview.png" alt="Creatividad">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="https://i.postimg.cc/4dg4DbY8/Crea-Te-1-removebg-preview.png" alt="Menú" style="width: 30px; height: 30px;">
@@ -223,13 +238,19 @@
         </div>
     </nav>
 
+
     <header>
-        <h1>Videojuego</h1>
-        <p>Un viaje único en tecnología y creatividad.</p>
+        <h1 class="animate__animated animate__pulse">Space Hunter</h1>
+        <p class="animate__animated animate__pulse">Sumérgete en una experiencia unica</p>
     </header>
 
+    <div class="hero">
+        <h2>Un viaje único en tecnología y creatividad</h2>
+    </div>
+   
+    
     <main class="container content-section">
-        <h2>Descubre Nuestro Videojuego</h2>
+        <h2 style="font-size: 50px;">Descubre Nuestro Videojuego</h2>
         <p class="mt-4">Sumérgete en una experiencia interactiva como nunca antes. Diseñado para estimular tu imaginación, este videojuego combina la creatividad con tecnología de vanguardia.</p>
         <img src="https://i.ibb.co/xC7VRWK/Captura-de-pantalla-7.png" alt="Imagen del Videojuego" class="my-4">
         <p>Explora mundos fascinantes, resuelve desafíos únicos y lleva tu creatividad al límite con esta aventura interactiva.</p>
@@ -247,7 +268,7 @@
         </div>
         <div class="game-info-image">
             <!-- Imagen representativa del juego -->
-            <img src="https://via.placeholder.com/500x300?text=Enfrenta+Alienígenas" alt="Juego de Alienígenas" class="img-fluid rounded">
+            <img src="https://i.postimg.cc/DZdCF7YL/alienigena.png" alt="Juego de Alienígenas" class="img-fluid rounded">
         </div>
     </div>
     
@@ -376,19 +397,37 @@
             </div>
         </div>
 
-        <a href="#" class="btn btn-warning mt-3">Juega Ahora</a>
+        <a href="https://www.roblox.com/share?code=4cee1979a9697449a19950f3efcad34f&type=ExperienceDetails&stamp=1735224609661" class="btn btn-warning mt-3" target="_blank">Juega Ahora</a>
+
+
     </main>
     
 
     <footer>
-        <p>&copy; 2024 - Interacción Humano Computador | Ciencias de la Computación</p>
-        <div class="footer-links">
-            <a href="index.html">Inicio</a> |
-            <a href="videojuego.html">Videojuego</a> |
-            <a href="proyecto.html">Proyecto Final</a>
+        <div class="footer-content">
+            <p>&copy; 2024 - Interacción Humano Computador | Ciencias de la Computación</p>
+            <div class="footer-links">
+                <a href="index.html">Inicio</a> |
+                <a href="videojuego.html">Videojuego</a> |
+                <a href="proyecto.html">Proyecto Final</a> |
+            </div>
+            <div class="footer-contact">
+                <p>Contactate con nuestro equipo:</p>
+                <ul>
+                    <li>
+                        <a href="mailto:ysuniq@unsa.edu.pe">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Desarrollador: Yanira Angie Suni Quispe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:desarrollador2@example.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Desarrollador: Sennayda Rimache Choquehuanca
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     
