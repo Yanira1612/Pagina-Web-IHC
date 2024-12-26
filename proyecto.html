@@ -60,7 +60,7 @@
         }
 
         .hero {
-            background-image: url('https://i.postimg.cc/NFHmfxgW/tumblr-o53kmc-GSVP1uo4yrqo3-400-gif-400-400.gif');
+            background-image: url('https://i.postimg.cc/Yqc1R5nw/Roblox-Screen-Shot20241226-100418226.png');
             background-size: cover;
             background-position: center;
             height: 400px;
@@ -144,6 +144,49 @@
             text-decoration: underline;
         }
 
+        .btn-orange {
+    background-color: #e39426; /* Naranja */
+    color: white; /* Texto en blanco */
+}
+
+.btn-green {
+    background-color: #327704; /* Naranja */
+    color: white; /* Texto en blanco */
+}
+
+.btn-blue {
+    background-color: #005ed2; /* Naranja */
+    color: white; /* Texto en blanco */
+}
+
+.btn-img {
+    background-color: #a49589; /* Naranja */
+    color: white; /* Texto en blanco */
+}
+
+
+
+        /* Estilo personalizado para el botón */
+.custom-btn {
+    font-size: 1.5rem; /* Tamaño de fuente grande */
+    padding: 15px 30px; /* Aumento de espacio alrededor del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Transición suave para efectos */
+}
+
+.custom-btn:hover {
+    transform: scale(1.1); /* Aumenta el tamaño cuando el usuario pasa el mouse */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Efecto de sombra al pasar el mouse */
+    background-color: #d9862d; /* Cambia el color de fondo en hover */
+}
+
+.custom-btn:active {
+    transform: scale(1); /* Vuelve al tamaño normal cuando se hace clic */
+    background-color: #e6a800; /* Color más oscuro al hacer clic */
+}
+
+
+
         h1 {
             font-family: 'Poppins', sans-serif;
             font-weight: bold;
@@ -155,8 +198,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="https://i.postimg.cc/4dg4DbY8/Crea-Te-1-removebg-preview.png" alt="Creatividad" style="width: 100px; height: auto;">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://i.postimg.cc/637Jz2Hz/Crea-Te-removebg-preview.png" alt="Creatividad" style="width: 100px; height: auto;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <img src="https://i.postimg.cc/4dg4DbY8/Crea-Te-1-removebg-preview.png" alt="Menú" style="width: 30px; height: 30px;">
@@ -164,7 +207,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="videojuego.html">Videojuego</a>
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="videojuego.html">Videojuego</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="proyecto.html">Proyecto Final</a>
@@ -184,54 +230,165 @@
     </div>
 
     <main class="container my-5">
-        <h2 class="text-center">Planteamiento del Problema</h2>
-        <p class="lead">En la actualidad, la interacción humano-computador sigue siendo un desafío complejo, sobre todo en entornos que requieren de una experiencia inmersiva y eficiente. Nuestro proyecto busca mejorar la experiencia del usuario al ofrecer una interfaz intuitiva, accesible y creativa.</p>
+        <div class="container my-5">
+            <div class="card shadow-lg rounded p-4">
+                <h2 class="text-center mb-4" style="color: black;">Planteamiento del Problema</h2>
+                <p class="lead text-center text-muted">
+                    El proceso de escritura creativa puede ser desafiante, especialmente cuando los escritores se enfrentan a obstáculos como la falta de inspiración, el temor a una hoja en blanco o la monotonía en la práctica. En este contexto, se identifica la necesidad de un enfoque innovador que haga de la escritura una actividad estimulante y accesible para todos.
+                </p>
+            </div>
+        </div>
+        
 
-        <h2 class="text-center mt-5">Objetivo del Proyecto</h2>
-        <p class="lead">El objetivo principal es desarrollar una solución innovadora en el ámbito de la interacción humano-computador, a través de la creación de una interfaz de usuario avanzada que permita optimizar las interacciones en un entorno virtual, maximizando la creatividad y la facilidad de uso.</p>
+        <div class="container my-5">
+            <div class="card shadow-lg rounded p-4">
+                <h2 class="text-center mb-4" style="color: black;">Objetivo del proyecto</h2>
+                <p class="lead text-center text-muted">
+                    El objetivo principal del proyecto es diseñar un juego interactivo que combine diversión y aprendizaje para mejorar las habilidades de escritura creativa. Este juego ofrecerá ejercicios dinámicos y retos personalizados que motiven a los usuarios a practicar y desarrollar su capacidad narrativa de forma constante.
+                </p>
+            </div>
+        </div>
+
 
         <h2 class="text-center mt-5">Etapas del Proyecto</h2>
 
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Etapa 1">
+                    <img src="https://i.postimg.cc/zGTscYFZ/1.png" class="card-img-top" alt="Etapa 1">
                     <div class="card-body">
-                        <h5 class="card-title">Etapa 1: Investigación y Análisis</h5>
-                        <p class="card-text">Exploración de las tecnologías existentes y análisis de la viabilidad del proyecto. Definición de los requerimientos técnicos y diseño preliminar.</p>
-                        <a href="https://enlaceexterno1.com" class="btn btn-primary">Enlace 1</a>
-                        <a href="https://enlaceexterno2.com" class="btn btn-secondary">Enlace 2</a>
-                        <a href="https://enlaceexterno3.com" class="btn btn-success">Enlace 3</a>
+                        <h5 class="card-title">Etapa 1: Propuesta</h5>
+                        <p class="card-text">Se elaboró un documento en el cual se encuentran detallados los siguientes puntos:</p>
+                        <ol>
+                            <li>Introducción</li>
+                            <li>Planteamiento del problema</li>
+                            <li>Objetivos</li>
+                            <li>Público Objetivo</li>
+                            <li>Qué hará el proyecto</li>
+                            <li>Análisis de sistemas existentes</li>
+                            <li>Herramientas para guionistas existentes</li>
+                            <li>Comparaciones entre sistemas existentes</li>
+                            <li>Investigaciones y artículos</li>
+                        </ol>
+                        
+                        <a href="https://docs.google.com/document/d/1FhdMAakkn2CwMKjgyFnJJsX5oLhx9_2z2eAUTGoQJLw/edit?usp=sharing" class="btn btn-blue" target="_blank">
+                            <i class="fas fa-file"></i> DOC
+                        </a>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Etapa 2">
+                    <img src="https://i.postimg.cc/1zPkx7vg/2.png" class="card-img-top" alt="Etapa 2">
                     <div class="card-body">
-                        <h5 class="card-title">Etapa 2: Diseño y Prototipado</h5>
-                        <p class="card-text">Desarrollo de prototipos de interfaces y pruebas de usabilidad para validar el diseño.</p>
-                        <a href="https://enlaceexterno1.com" class="btn btn-primary">Enlace 1</a>
-                        <a href="https://enlaceexterno2.com" class="btn btn-secondary">Enlace 2</a>
-                        <a href="https://enlaceexterno3.com" class="btn btn-success">Enlace 3</a>
+                        <h5 class="card-title">Etapa 2: Entrevistas y NeedFinding</h5>
+                        <p class="card-text">Se realizó un documento con las necesidades de los usuarios y momentos interesantes de las entrevistas.</p>
+                        <a href="https://docs.google.com/presentation/d/1iD9WRF3WRIG7Z0yoevMijlq86Ol5lMBX/edit?usp=sharing&ouid=116415376426421706678&rtpof=true&sd=true" class="btn btn-blue" target="_blank">
+                            <i class="fas fa-file"></i> DOC
+                        </a>
+
+                        <a href="https://docs.google.com/presentation/d/1JPYA_sFvckrIMZlmbYleDiqhe4CuZQ8o/edit?usp=sharing&ouid=116415376426421706678&rtpof=true&sd=true" class="btn btn-orange" target="_blank">
+                            <i class="fas fa-file-powerpoint"></i> PPT
+                        </a>
+
+                        <a href="https://proyectoihc.my.canva.site/copia-de-create" class="btn btn-green" target="_blank">
+                            <i class="fas fa-video"></i> Entrevistas
+                        </a>
+                      
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://via.placeholder.com/300" class="card-img-top" alt="Etapa 3">
+                    <img src="https://i.postimg.cc/Xv8TnKPs/3.png" class="card-img-top" alt="Etapa 3">
                     <div class="card-body">
-                        <h5 class="card-title">Etapa 3: Desarrollo del Sistema</h5>
-                        <p class="card-text">Implementación de las tecnologías seleccionadas y desarrollo del sistema interactivo completo.</p>
-                        <a href="https://enlaceexterno1.com" class="btn btn-primary">Enlace 1</a>
-                        <a href="https://enlaceexterno2.com" class="btn btn-secondary">Enlace 2</a>
-                        <a href="https://enlaceexterno3.com" class="btn btn-success">Enlace 3</a>
+                        <h5 class="card-title">Etapa 3: Story Board</h5>
+                        <p class="card-text">A través de este proceso, se busca anticipar posibles desafíos en la usabilidad y mejorar la experiencia del usuario, garantizando que el producto final sea intuitivo, atractivo y coherente con los objetivos del proyecto.</p>
+                        <a href="https://docs.google.com/presentation/d/1iD9WRF3WRIG7Z0yoevMijlq86Ol5lMBX/edit?usp=sharing&ouid=116415376426421706678&rtpof=true&sd=true" class="btn btn-orange" target="_blank">
+                            <i class="fas fa-file-powerpoint"></i> PPT
+                        </a>
+
+                        <a href="https://drive.google.com/drive/folders/1_zJ2k2AlUcBWWAdMLyXrr4lLDTJZfX6a?usp=sharing" class="btn btn-img" target="_blank">
+                            <i class="fas fa-image"></i> IMG
+                        </a>
+
                     </div>
                 </div>
             </div>
         </div>
+
+
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://i.postimg.cc/RFpyHS4f/4.png" class="card-img-top" alt="Etapa 1">
+                <div class="card-body">
+                    <h5 class="card-title">Etapa 4: Prototipo</h5>
+                    <p class="card-text">El uso de prototipos no solo facilita la toma de decisiones en cuanto a diseño, sino que también optimiza la comunicación entre los miembros del equipo y con los clientes</p>
+
+
+                    <a href="https://docs.google.com/document/d/1FhdMAakkn2CwMKjgyFnJJsX5oLhx9_2z2eAUTGoQJLw/edit?usp=sharing" class="btn btn-blue" target="_blank">
+                        <i class="fas fa-file"></i> DOC
+                    </a>
+
+                    <a href="https://drive.google.com/drive/folders/1u1rwruol9ef6pLhIDsrKi7OdoDOYgz6U?usp=sharing" class="btn btn-img" target="_blank">
+                        <i class="fas fa-image"></i> IMG
+                    </a>
+
+                    
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://i.postimg.cc/kgrrsg8v/5.png" class="card-img-top" alt="Etapa 3">
+                <div class="card-body">
+                    <h5 class="card-title">Etapa 5: Personas</h5>
+                    <p class="card-text">Implementación de las tecnologías seleccionadas y desarrollo del sistema interactivo completo.</p>
+                    <a href="https://www.canva.com/design/DAGaaGBQpQU/yhltf2CO_OJvBL7nQe95zA/edit" class="btn btn-orange" target="_blank">
+                        <i class="fas fa-file-powerpoint"></i> PPT
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://i.postimg.cc/FRHwzd5N/6.png" class="card-img-top" alt="Etapa 2">
+                <div class="card-body">
+                    <h5 class="card-title">Etapa 6: Entrevistas</h5>
+                    <p class="card-text">Se realizó un documento con las necesidades de los usuarios y momentos interesantes de las entrevistas.</p>
+                    <a href="https://proyectoihc.my.canva.site/dagazwiazf0" class="btn btn-green" target="_blank">
+                        <i class="fas fa-video"></i> Entrevista
+                    </a>
+
+                  
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+   
+        </div>
+    </div>
+</div>
+
+
+    
+<div class="container text-center mt-5">
+    <a href="https://www.roblox.com/share?code=23934afc51d4eb488a88822fe87cd78d&type=ExperienceDetails&stamp=1735228673562" class="btn btn-warning btn-lg mt-3 custom-btn" target="_blank">Pruebalo Ahora</a>
+</div>
+
+
 
         <!-- Agregar más etapas si lo deseas -->
 
@@ -241,17 +398,28 @@
         <div class="footer-content">
             <p>&copy; 2024 - Interacción Humano Computador | Ciencias de la Computación</p>
             <div class="footer-links">
+                <a href="index.html">Inicio</a> |
                 <a href="videojuego.html">Videojuego</a> |
                 <a href="proyecto.html">Proyecto Final</a> |
-                <a href="#">Enlace adicional</a>
             </div>
             <div class="footer-contact">
+                <p>Contactate con nuestro equipo:</p>
                 <ul>
-                    <li><a href="mailto:ysuniq@tecsup.edu.pe">ysuniq@tecsup.edu.pe</a></li>
+                    <li>
+                        <a href="mailto:ysuniq@unsa.edu.pe">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Desarrollador: Yanira Angie Suni Quispe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:desarrollador2@example.com">
+                            <i class="fa fa-envelope" aria-hidden="true"></i> Desarrollador: Sennayda Rimache Choquehuanca
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </footer>
+    
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
